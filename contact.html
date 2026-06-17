@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE CONNECTION | Contact Bauhaus</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 6rem 0 4rem;
+            background-color: var(--yellow);
+            color: var(--black);
+            border-bottom: var(--border-thick) solid var(--black);
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            min-height: 600px;
+        }
+
+        .contact-info {
+            grid-column: span 5;
+            border-right: var(--border-thick) solid var(--black);
+            padding: 4rem;
+            background-color: var(--white);
+        }
+
+        .contact-form-area {
+            grid-column: span 7;
+            padding: 4rem;
+            background-color: var(--grey);
+        }
+
+        .form-row {
+            margin-bottom: 2.5rem;
+        }
+
+        .form-row label {
+            display: block;
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-row input, .form-row textarea {
+            width: 100%;
+            padding: 1rem;
+            border: var(--border-thick) solid var(--black);
+            background-color: var(--white);
+            font-family: inherit;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .form-row input:focus, .form-row textarea:focus {
+            background-color: var(--yellow);
+        }
+
+        .contact-method {
+            margin-bottom: 3rem;
+        }
+
+        .contact-method h4 {
+            font-size: 0.7rem;
+            opacity: 0.5;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-method p {
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 900px) {
+            .contact-info, .contact-form-area { grid-column: span 12; border-right: none; }
+            .contact-info { padding: 3rem 2rem; border-bottom: var(--border-thick) solid var(--black); }
+            .contact-form-area { padding: 3rem 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">BAUHAUS</a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Manifesto</a></li>
+                    <li><a href="gallery.html">Works</a></li>
+                    <li><a href="contact.html" class="active">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span style="font-weight: 800; font-size: 0.8rem; letter-spacing: 4px; display: block; margin-bottom: 1rem;">[ UPLINK_01 ]</span>
+                <h1>THE CONNECTION.</h1>
+            </div>
+        </section>
+
+        <section class="contact-layout border-bottom">
+            <div class="contact-info">
+                <h2>RADICAL_DIALOGUE</h2>
+                <p style="margin-top: 2rem; margin-bottom: 4rem;">Open communication is the cornerstone of shared innovation. We invite you to join the collective.</p>
+                
+                <div class="contact-method">
+                    <h4>STATION</h4>
+                    <p>Dessau-Roßlau, Germany</p>
+                </div>
+
+                <div class="contact-method">
+                    <h4>DIRECT_LINE</h4>
+                    <p>+49 340 6508-250</p>
+                </div>
+
+                <div class="contact-method">
+                    <h4>DIGITAL_MAIL</h4>
+                    <p>hello@bauhaus-web.io</p>
+                </div>
+            </div>
+
+            <div class="contact-form-area">
+                <form id="bauhausForm">
+                    <div class="form-row">
+                        <label>FULL_NAME</label>
+                        <input type="text" required placeholder="SENDER_ID">
+                    </div>
+                    <div class="form-row">
+                        <label>RETURN_PATH (EMAIL)</label>
+                        <input type="email" required placeholder="EMAIL@SERVER.COM">
+                    </div>
+                    <div class="form-row">
+                        <label>MESSAGE_STREAM</label>
+                        <textarea rows="5" required placeholder="INPUT_DATA..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-bauhaus" style="width: 100%;">SEND_SIGNAL</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="display: inline-block; margin-bottom: 2rem;">BAUHAUS</div>
+                    <p style="opacity: 0.8;">Radical minimalist collective. Since 2026. (WEIMAR_DESSAU_WEB)</p>
+                </div>
+                <div class="footer-col">
+                    <h4>MODULES</h4>
+                    <ul>
+                        <li><a href="index.html">The Manifesto</a></li>
+                        <li><a href="gallery.html">The Works</a></li>
+                        <li><a href="contact.html">The Connection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>PRINCIPLES</h4>
+                    <ul>
+                        <li>Rationalization</li>
+                        <li>Standardization</li>
+                        <li>Industrialization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BAUHAUS DESIGN COLLECTIVE. ALL FORM PROTECTED.</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">Note: This is a demo website created for example purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

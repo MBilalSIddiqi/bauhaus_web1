@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE WORKS | Bauhaus Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .page-header {
+            padding: 6rem 0 4rem;
+            background-color: var(--blue);
+            color: var(--white);
+            border-bottom: var(--border-thick) solid var(--black);
+        }
+
+        .gallery-modular {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2px;
+            background-color: var(--black);
+            border-bottom: var(--border-thick) solid var(--black);
+        }
+
+        .gallery-item {
+            background-color: var(--white);
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 450px;
+        }
+
+        .item-shape {
+            height: 200px;
+            border: var(--border-thick) solid var(--black);
+            margin-bottom: 2rem;
+        }
+
+        .item-meta {
+            border-top: 2px solid var(--black);
+            padding-top: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">BAUHAUS</a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Manifesto</a></li>
+                    <li><a href="gallery.html" class="active">Works</a></li>
+                    <li><a href="contact.html">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <span style="font-weight: 800; font-size: 0.8rem; letter-spacing: 4px; display: block; margin-bottom: 1rem;">[ ARCHIVE_01 ]</span>
+                <h1>THE WORKS.</h1>
+            </div>
+        </section>
+
+        <section class="gallery-modular">
+            <!-- Work 1 -->
+            <div class="gallery-item">
+                <div class="item-shape bg-red"></div>
+                <div>
+                    <h3>Modular Housing</h3>
+                    <p style="font-size: 0.9rem; margin-top: 1rem;">Standardized structural units for rapid urban deployment.</p>
+                </div>
+                <div class="item-meta">
+                    <span>YEAR: 1927</span>
+                    <span class="red-text">REF_01</span>
+                </div>
+            </div>
+
+            <!-- Work 2 -->
+            <div class="gallery-item">
+                <div class="item-shape bg-yellow" style="border-radius: 50% !important;"></div>
+                <div>
+                    <h3>Circular Flow</h3>
+                    <p style="font-size: 0.9rem; margin-top: 1rem;">A study on the movement of people within industrial spaces.</p>
+                </div>
+                <div class="item-meta">
+                    <span>YEAR: 1928</span>
+                    <span class="red-text">REF_02</span>
+                </div>
+            </div>
+
+            <!-- Work 3 -->
+            <div class="gallery-item">
+                <div class="item-shape bg-blue" style="clip-path: polygon(50% 0%, 0% 100%, 100% 100%);"></div>
+                <div>
+                    <h3>Triadic Ballet</h3>
+                    <p style="font-size: 0.9rem; margin-top: 1rem;">Costume and stage design as mathematical expression.</p>
+                </div>
+                <div class="item-meta">
+                    <span>YEAR: 1929</span>
+                    <span class="red-text">REF_03</span>
+                </div>
+            </div>
+
+            <!-- Work 4 -->
+            <div class="gallery-item">
+                <div class="item-shape bg-black"></div>
+                <div>
+                    <h3>Negative Grid</h3>
+                    <p style="font-size: 0.9rem; margin-top: 1rem;">The presence of absence in modern typographic layout.</p>
+                </div>
+                <div class="item-meta">
+                    <span>YEAR: 1930</span>
+                    <span class="red-text">REF_04</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="display: inline-block; margin-bottom: 2rem;">BAUHAUS</div>
+                    <p style="opacity: 0.8;">Radical minimalist collective. Since 2026. (WEIMAR_DESSAU_WEB)</p>
+                </div>
+                <div class="footer-col">
+                    <h4>MODULES</h4>
+                    <ul>
+                        <li><a href="index.html">The Manifesto</a></li>
+                        <li><a href="gallery.html">The Works</a></li>
+                        <li><a href="contact.html">The Connection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>PRINCIPLES</h4>
+                    <ul>
+                        <li>Rationalization</li>
+                        <li>Standardization</li>
+                        <li>Industrialization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BAUHAUS DESIGN COLLECTIVE. ALL FORM PROTECTED.</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">Note: This is a demo website created for example purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

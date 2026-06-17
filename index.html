@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE MANIFESTO | Bauhaus Design Collective</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .asym-hero {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            border-bottom: var(--border-thick) solid var(--black);
+        }
+
+        .hero-text {
+            grid-column: span 8;
+            padding: 8rem 4rem;
+            border-right: var(--border-thick) solid var(--black);
+        }
+
+        .hero-shape {
+            grid-column: span 4;
+            background-color: var(--yellow);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .red-square {
+            width: 150px;
+            height: 150px;
+            background-color: var(--red);
+            border: var(--border-thick) solid var(--black);
+            position: absolute;
+            top: -50px;
+            right: 50px;
+        }
+
+        .blue-circle {
+            width: 200px;
+            height: 200px;
+            background-color: var(--blue);
+            border: var(--border-thick) solid var(--black);
+            border-radius: 50% !important; /* One exception for Bauhaus */
+        }
+
+        @media (max-width: 900px) {
+            .hero-text { grid-column: span 12; border-right: none; padding: 4rem 2rem; }
+            .hero-shape { grid-column: span 12; height: 300px; border-top: var(--border-thick) solid var(--black); }
+            .red-square { right: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">BAUHAUS</a>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Manifesto</a></li>
+                    <li><a href="gallery.html">Works</a></li>
+                    <li><a href="contact.html">Connect</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="asym-hero">
+            <div class="hero-text">
+                <span style="font-weight: 800; font-size: 0.8rem; letter-spacing: 4px; display: block; margin-bottom: 2rem;">[ FORM_FOLLOWS_FUNCTION ]</span>
+                <h1>THE TOTAL<br>ART WORK.</h1>
+                <p style="font-size: 1.25rem; max-width: 500px; margin-top: 3rem; font-weight: 600;">We believe in the unity of art, craft, and technology. A radical return to the basics of geometry and color.</p>
+                <div style="margin-top: 4rem;">
+                    <a href="gallery.html" class="btn-bauhaus">Explore the grid</a>
+                </div>
+            </div>
+            <div class="hero-shape">
+                <div class="red-square"></div>
+                <div class="blue-circle"></div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="grid-display">
+                    <div class="box grid-col-span-4 bg-red" style="grid-column: span 4;">
+                        <h3>Rhythm</h3>
+                        <p style="margin-top: 2rem;">The repetition of form creates the pulse of the environment.</p>
+                    </div>
+                    <div class="box grid-col-span-8" style="grid-column: span 8;">
+                        <h2>UNIFIED<br>STRUCTURE</h2>
+                        <p style="margin-top: 2rem; font-size: 1.1rem;">Architecture is the ultimate aim of all artistic activity. Every detail must contribute to the whole, serving both aesthetic and functional goals.</p>
+                    </div>
+                    <div class="box grid-col-span-6 bg-blue" style="grid-column: span 6;">
+                        <h3>Primary Colors</h3>
+                    </div>
+                    <div class="box grid-col-span-6 bg-yellow" style="grid-column: span 6;">
+                        <h3>Pure Geometry</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-black">
+            <div class="container" style="text-align: center;">
+                <h2 style="color: var(--white); border-bottom-color: var(--white);">THE_FUTURE</h2>
+                <p style="margin: 3rem auto; max-width: 600px;">Join us in the radical simplification of the digital world. No fluff. Just form.</p>
+                <a href="contact.html" class="btn-bauhaus" style="background-color: var(--white); color: var(--black);">Get in Touch</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="display: inline-block; margin-bottom: 2rem;">BAUHAUS</div>
+                    <p style="opacity: 0.8;">Radical minimalist collective. Since 2026. (WEIMAR_DESSAU_WEB)</p>
+                </div>
+                <div class="footer-col">
+                    <h4>MODULES</h4>
+                    <ul>
+                        <li><a href="index.html">The Manifesto</a></li>
+                        <li><a href="gallery.html">The Works</a></li>
+                        <li><a href="contact.html">The Connection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>PRINCIPLES</h4>
+                    <ul>
+                        <li>Rationalization</li>
+                        <li>Standardization</li>
+                        <li>Industrialization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 BAUHAUS DESIGN COLLECTIVE. ALL FORM PROTECTED.</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">Note: This is a demo website created for example purposes only.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
